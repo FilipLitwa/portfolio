@@ -21,53 +21,60 @@
         </ul>
     </nav>
 
-    <!-- Hero section -->
-    <header class="hero">
+    <!-- Hero -->
+    <header class="hero reveal">
         <div class="hero-text">
             <h1>Hi, I’m Filip Litwa</h1>
-            <p>I design intuitive, beautiful, and functional digital experiences.</p>
+            <p>UX Designer crafting intuitive and delightful digital experiences.</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="about" class="about reveal">
         <h2>About Me</h2>
-        <p>I’m a UX designer passionate about creating products that not only work seamlessly but also delight users visually. My expertise includes user research, prototyping, usability testing, and interface design in Figma.</p>
+        <p>I’m a UX designer with a passion for turning complex problems into elegant, user-friendly solutions. Skilled in user research, prototyping, usability testing, and interface design in Figma.</p>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <h2 class="reveal">Projects</h2>
         <div class="grid">
-            <div class="card">
-                <img src="images/project1.jpg" alt="Project 1">
+            <div class="card reveal" onclick="openModal('modal1')">
+                <img src="images/boardgamearena.jpg" alt="BoardGameArena Case Study">
                 <div class="card-content">
-                    <h3>Time Management App</h3>
-                    <p>Redesigned a mobile app, increasing user retention by 30% through improved usability and accessibility.</p>
+                    <h3>BoardGameArena – Case Study</h3>
+                    <p>Redesign of online board gaming platform focusing on UX flow and player engagement.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="images/project2.jpg" alt="Project 2">
+            <div class="card reveal" onclick="openModal('modal2')">
+                <img src="images/smart-zielnik.jpg" alt="Smart Zielnik App">
                 <div class="card-content">
-                    <h3>E-commerce UX Optimization</h3>
-                    <p>Improved the online shopping experience, resulting in a 25% increase in conversions.</p>
+                    <h3>Smart Zielnik – Mobile App</h3>
+                    <p>Plant identification and care assistant with smart reminders and AR features.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="images/project3.jpg" alt="Project 3">
+            <div class="card reveal" onclick="openModal('modal3')">
+                <img src="images/hearthbeat.jpg" alt="Hearthbeat App">
                 <div class="card-content">
-                    <h3>Analytics Dashboard</h3>
-                    <p>Designed a data analytics dashboard focused on clarity, visual hierarchy, and ease of use for analysts.</p>
+                    <h3>Hearthbeat – Event Design App</h3>
+                    <p>Event planning and interaction platform for engaging live experiences.</p>
+                </div>
+            </div>
+            <div class="card reveal" onclick="openModal('modal4')">
+                <img src="images/dashboard.jpg" alt="Data Analytics Dashboard">
+                <div class="card-content">
+                    <h3>Commercial Data Analytics Dashboard</h3>
+                    <p>Business intelligence dashboard with advanced visualizations and KPIs.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact reveal">
         <h2>Contact</h2>
-        <p>I’d be happy to discuss your project and how we can work together.</p>
+        <p>Let’s talk about your next project.</p>
         <a href="mailto:contact@johnux.com" class="btn">Get in Touch</a>
     </section>
 
@@ -76,5 +83,43 @@
         <p>&copy; 2025 Filip Litwa – UX Portfolio</p>
     </footer>
 
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>BoardGameArena – Case Study</h2>
+            <p>Detailed UX redesign process including user interviews, journey mapping, and iterative prototyping to enhance player engagement and retention.</p>
+            <img src="images/boardgamearena-full.jpg" alt="BoardGameArena full view">
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Smart Zielnik – Mobile App</h2>
+            <p>Created an intelligent plant recognition and care guide with AR overlays, notification system, and a clean, minimal UI.</p>
+            <img src="images/smart-zielnik-full.jpg" alt="Smart Zielnik full view">
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Hearthbeat – Event Design & Interaction App</h2>
+            <p>Developed an event management platform enabling interactive live experiences, real-time polls, and personalized schedules.</p>
+            <img src="images/hearthbeat-full.jpg" alt="Hearthbeat full view">
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Commercial Data Analytics Dashboard</h2>
+            <p>Designed a comprehensive dashboard for corporate clients, providing KPIs, trends, and drill-down analysis with an emphasis on clarity and efficiency.</p>
+            <img src="images/dashboard-full.jpg" alt="Dashboard full view">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
