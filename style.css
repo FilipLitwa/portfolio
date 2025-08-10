@@ -1,0 +1,131 @@
+/* Reset i fonty */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Nawigacja */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav .logo {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #0077ff;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #0077ff, #00c6ff);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    background: white;
+    color: #0077ff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background: #005fcc;
+    color: white;
+}
+
+/* Sekcje */
+section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Projekty */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img {
+    width: 100%;
+    display: block;
+}
+.card-content {
+    padding: 1.5rem;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Kontakt */
+.contact {
+    text-align: center;
+}
+.contact .btn {
+    margin-top: 1rem;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #eee;
+    font-size: 0.9rem;
+}
+
+/* Responsywność */
+@media (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
