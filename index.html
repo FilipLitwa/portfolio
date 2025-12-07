@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -33,7 +35,7 @@
     <!-- About -->
     <section id="about" class="about reveal">
         <h2>About Me</h2>
-        <p>I’m a UX designer with a passion for turning complex problems into elegant, user-friendly solutions. Skilled in user research, prototyping, usability testing, and interface design in Figma.</p>
+        <p>I’m a UX designer dedicated to creating intuitive, engaging digital experiences. I hold a degree in Social Informatics from AGH University of Science and Technology, where I explored the intersection of technology, design, and human behavior. My experience includes working on real-world projects, from research and prototyping to usability testing and interface design in Figma. I strive to design digital products that not only function seamlessly but also enhance the way people connect and interact.</p>
     </section>
 
     <!-- Projects -->
@@ -41,42 +43,57 @@
         <h2 class="reveal">Projects</h2>
         <div class="grid">
             <div class="card reveal" onclick="openModal('modal1')">
-                <img src="images/boardgamearena.jpg" alt="BoardGameArena Case Study">
+                <img src="images/bga_portf.png" alt="BoardGameArena Case Study">
                 <div class="card-content">
                     <h3>BoardGameArena – Case Study</h3>
-                    <p>Redesign of online board gaming platform focusing on UX flow and player engagement.</p>
+                    <p>Redesigned a popular board-gaming website with an outdated interface, improving readability and addressing key usability pain points.</p>
                 </div>
             </div>
-            <div class="card reveal" onclick="openModal('modal2')">
-                <img src="images/smart-zielnik.jpg" alt="Smart Zielnik App">
-                <div class="card-content">
-                    <h3>Smart Zielnik – Mobile App</h3>
-                    <p>Plant identification and care assistant with smart reminders and AR features.</p>
-                </div>
-            </div>
+
             <div class="card reveal" onclick="openModal('modal3')">
-                <img src="images/hearthbeat.jpg" alt="Hearthbeat App">
+                <img src="images/hb.png" alt="Hearthbeat App">
                 <div class="card-content">
                     <h3>Hearthbeat – Event Design App</h3>
                     <p>Event planning and interaction platform for engaging live experiences.</p>
                 </div>
             </div>
+            <div class="card reveal" onclick="openModal('modal5')">
+                <img src="images/ceb4.png" alt="Cebulaż Museum website redesign">
+                <div class="card-content">
+                    <h3>Cebulaż Museum - Website redesign</h3>
+                    <p>Redesigned an outdated museum website, focusing on usability.</p>
+                </div>
+            </div>
             <div class="card reveal" onclick="openModal('modal4')">
-                <img src="images/dashboard.jpg" alt="Data Analytics Dashboard">
+                <img src="images/dash.png" alt="Data Analytics Dashboard">
                 <div class="card-content">
                     <h3>Commercial Data Analytics Dashboard</h3>
                     <p>Business intelligence dashboard with advanced visualizations and KPIs.</p>
                 </div>
             </div>
+            <div class="card reveal" onclick="openModal('modal2')">
+                <img src="images/plants2.png" alt="Smart Plant Care App">
+                <div class="card-content">
+                    <h3>Plantopia – Plant Care App</h3>
+                    <p>Interactive plant map that visually connects species with similar needs.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact reveal">
-        <h2>Contact</h2>
-        <p>Let’s talk about your next project.</p>
-        <a href="mailto:contact@johnux.com" class="btn">Get in Touch</a>
-    </section>
+<!-- Contact -->
+<section id="contact" class="contact reveal">
+    <h2>Contact</h2>
+    <p>Let’s talk about your next project.</p>
+
+    <div class="contact-info">
+        <a href="mailto:fili.litwa@gmail.com"><i class="fas fa-envelope"></i> fili.litwa@gmail.com</a>
+        <a href="tel:+48784709493"><i class="fas fa-phone"></i> +48 784709493</a>
+        <a href="https://github.com/FilipLitwa" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/filip-litwa" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer>
@@ -88,17 +105,17 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal1')">&times;</span>
             <h2>BoardGameArena – Case Study</h2>
-            <p>Detailed UX redesign process including user interviews, journey mapping, and iterative prototyping to enhance player engagement and retention.</p>
-            <img src="images/boardgamearena-full.jpg" alt="BoardGameArena full view">
+            <p>Redesigned a popular board-gaming platform by modernizing its outdated interface, enhancing visual hierarchy, and significantly improving overall readability. The project included a detailed UX redesign process involving user interviews, journey mapping, and iterative prototyping to identify and resolve key usability pain points, resulting in clearer navigation, more intuitive user flows, and improved player engagement and retention.</p>
+            <img src="images/bgaFull.png" alt="BoardGameArena full view">
         </div>
     </div>
 
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h2>Smart Zielnik – Mobile App</h2>
-            <p>Created an intelligent plant recognition and care guide with AR overlays, notification system, and a clean, minimal UI.</p>
-            <img src="images/smart-zielnik-full.jpg" alt="Smart Zielnik full view">
+            <h2>Plantopia – Plant Care App</h2>
+            <p>An intelligent plant care application featuring an interactive plant map that visually connects species with similar needs, such as light level, water requirements, and soil type. The app supports plant growth by offering personalized care tips and allows users to create a virtual garden to better understand and manage their plants.</p>
+            <img src="images/plants_sketch.png" alt="Smart Zielnik full view">
         </div>
     </div>
 
@@ -106,8 +123,8 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal3')">&times;</span>
             <h2>Hearthbeat – Event Design & Interaction App</h2>
-            <p>Developed an event management platform enabling interactive live experiences, real-time polls, and personalized schedules.</p>
-            <img src="images/hearthbeat-full.jpg" alt="Hearthbeat full view">
+            <p>Design of a social event planning app that combines scheduling with social interaction. The prototype features a drag-and-drop interaction map for structuring events, assigning roles, and sharing tasks. Designed through design thinking, with personas, user scenarios, and usability testing, the app balances planning tools with collaborative and social features, making it adaptable to both casual meetups and large-scale events.</p>
+            <img src="images/hb_full.png" alt="Hearthbeat full view">
         </div>
     </div>
 
@@ -116,7 +133,16 @@
             <span class="close" onclick="closeModal('modal4')">&times;</span>
             <h2>Commercial Data Analytics Dashboard</h2>
             <p>Designed a comprehensive dashboard for corporate clients, providing KPIs, trends, and drill-down analysis with an emphasis on clarity and efficiency.</p>
-            <img src="images/dashboard-full.jpg" alt="Dashboard full view">
+            <img src="images/dash.png" alt="Dashboard full view">
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Cebulaż Museum website redesign</h2>
+            <p>Redesigned an outdated museum website by improving usability, streamlining navigation, and creating a modern visual identity that enhances accessibility and visitor engagement.</p>
+            <img src="images/ceb7.png" alt="Museum full view">
         </div>
     </div>
 
